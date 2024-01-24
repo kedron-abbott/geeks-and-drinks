@@ -20,7 +20,7 @@ export default function HeroDefault({ item }: { item: HeroBlockDto }) {
       : `url(${bg})`,
       backgroundSize: "cover",   
       backgroundRepeat: "no-repeat",
-      height: "calc(100vh - 145px)",
+      height: "calc(100vh - 96px)",
       display: "flex",
     }}>
       <div className="mx-auto max-w-screen-xl px-4 py-16 lg:flex lg:items-center">
