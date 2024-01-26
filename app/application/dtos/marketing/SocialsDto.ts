@@ -3,4 +3,6 @@ export interface SocialsDto {
   twitter?: string;
   github?: string;
   discord?: string;
+  meetup?: string;
+  eventbrite?: string;
 }
