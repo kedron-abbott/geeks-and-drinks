@@ -49,12 +49,7 @@ export default function FooterColumns({ item }: { item: FooterBlockDto }) {
       </div>
       <div className="bg-gray-100 dark:bg-gray-800">
         <div className="container mx-auto flex flex-col flex-wrap px-5 py-4 sm:flex-row">
-          <div className="text-center text-sm text-gray-500 sm:text-left">
-            {t("copyright")} —
-            <a href="https://saasrock.com/?ref=remix-page-blocks-footer" rel="noopener noreferrer" className="ml-1 text-gray-600" target="_blank">
-              Built with SaasRock.
-            </a>
-          </div>
+          <div className="text-center text-sm text-gray-500 sm:text-left">{t("copyright")}</div>
         </div>
       </div>
     </footer>
