@@ -90,4 +90,35 @@
   .uploadmyfile {
     display: none;
   }
+  .contact-list-container {
+
+    border-radius: 7px;
+  }
+  .contact-list-container:nth-child(1) {
+    background-color: #fea614 !important;
+  }
+  .contact-list-container:nth-child(2) {
+    background-color: #0ba3ff !important;
+  }
+  .contact-list-container:nth-child(3) {
+    background-color: #f62d45 !important;
+  } 
+  .contact-list-container:nth-child(4) {
+    background-color: #b733e8 !important;
+  }      
+  .contact-list-layout {
+    display: flex;
+    align-items: center;
+    padding: 16px;    
+  }
+  .contact-icon {
+    color:#fff;
+  }
+  path.contact-icon {
+    fill: #2c3441;
+  }
+  .contact-list-layout {
+    color:#2c3441;
+  }
 }
+

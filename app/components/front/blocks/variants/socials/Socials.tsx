@@ -41,7 +41,7 @@ export default function Socials({ item, iconClassName = "text-gray-400 hover:tex
       )}
 
       {item?.eventbrite && (
-        <a href={"https://www.meetup.com/meetup-group-umecjcqo/events/297634362/"} className={iconClassName} target="_blank" rel="noreferrer">
+        <a href={"https://www.eventbrite.com/o/geeks-and-drinks-45213976753"} className={iconClassName} target="_blank" rel="noreferrer">
           <span className="sr-only">Instagram</span>
           <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 256 256">
             <g>
@@ -49,7 +49,7 @@ export default function Socials({ item, iconClassName = "text-gray-400 hover:tex
               <path
                 d="M117.475323,82.7290398 C136.772428,78.4407943 156.069532,86.3025777 166.790146,101.311437 L81.5017079,120.608542 C84.3605382,102.26438 98.1782181,87.0172853 117.475323,82.7290398 Z M167.266618,153.48509 C160.596014,163.252761 150.351872,170.161601 138.678314,172.782195 C119.38121,177.070441 99.8458692,169.208657 89.1252554,153.961562 L174.651929,134.664457 L188.469609,131.567391 L215.152026,125.611495 C214.91379,119.893834 214.199082,114.176173 213.007903,108.696749 C202.287289,62.7172275 155.354825,33.8906884 108.42236,44.6113021 C61.4898956,55.3319159 32.1868848,101.073201 43.1457344,147.290958 C54.1045839,193.508715 100.798813,222.097018 147.731277,211.376404 C175.366637,205.182272 196.807864,186.599875 207.766714,163.014525 L167.266618,153.48509 L167.266618,153.48509 Z"
                 fill="#FFFFFF"
-                fill-rule="nonzero"
+                fillRule="nonzero"
               ></path>
             </g>
           </svg>
