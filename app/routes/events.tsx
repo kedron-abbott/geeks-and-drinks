@@ -21,7 +21,7 @@ export async function loader() {
     throw new Error(`HTTP error! status: ${response.status}`);
   }
   const data = await response.json();
-
+  console.log(data)
   return data;
 }
 
@@ -40,7 +40,16 @@ export default function Events() {
             <MainHeading title="Events" />
           </div>
           <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
-            {events.map((event) => (
+            {events.map((event: 
+              {
+                id: string, 
+                logo: {url: string}, 
+                url: string, 
+                start: {local: string},
+                name: {text: string},
+                description: {text: string},
+                venue: {name: string}
+              }) => (
               <div key={event.id} className="event-card-container group relative flex flex-col overflow-hidden rounded-sm border border-gray-200 bg-white">
                 <div className="event-card-image__aspect-container">
                   <img src={event.logo.url} className="event-card-image" />
