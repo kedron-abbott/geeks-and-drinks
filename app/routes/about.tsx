@@ -45,13 +45,13 @@ export default function AboutRoute() {
           <div className="relative mx-auto w-full max-w-7xl overflow-hidden px-4 py-12 sm:px-6 sm:py-6 lg:px-8">
             <div className="text-center">
               <MainHeading title="About Us" />
-              <p className="mx-auto mt-4 max-w-4xl sm:text-xl sm:leading-relaxed">
+              <p className="mx-auto mt-4 max-w-4xl text-lg leading-6 text-gray-500">
                 Driven by our passion for tech, creating safe and inclusive spaces, and fostering community in San Antonio, our team is committed to making tech
                 feel accessible for everyone.
               </p>
             </div>
 
-            <div className="py-24 md:py-32 lg:py-40">
+            <div className="mt-14">
               <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
                 <ul className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2">
                   {people.map((person) => (

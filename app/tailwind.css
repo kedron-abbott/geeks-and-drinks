@@ -121,6 +121,7 @@
     color:#2c3441;
   }
   .event-card-container {
+    border-radius: 1rem !important;    
     element.style {
       position: absolute;
       top: 0px;
@@ -128,6 +129,7 @@
       height: 100%;
       pointer-events: none;
       width: 100%;
+
     }
   }
 
@@ -153,5 +155,14 @@
     width: 100%;
     width: var(--image-width-mobile, var(--image-width, 100%));
   }
+
+  .chip {
+    padding: 4px 8px;
+    border-radius: 20px;
+    color:#2c3441;
+    border-color: #2c3441;    
+  }
+
+  
 }
 
