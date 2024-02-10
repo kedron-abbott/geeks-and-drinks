@@ -2,6 +2,8 @@ import Header from "~/components/front/Header";
 import { useLoaderData } from "@remix-run/react";
 import MainHeading from "~/components/ui/MainHeading";
 
+const MAX_EVENTS = 12;
+
 export async function loader() {
   var myHeaders = new Headers();
   myHeaders.append("Authorization", `Bearer ${process.env.EVENTBRITE_BEARER_TOKEN}`);
@@ -43,7 +45,10 @@ export default function Events() {
           </div>
           <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 ">
             <ul className="mt-14 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-2">
-              {events.map(
+              {events.map.slice(
+                0,
+                MAX_EVENTS
+              )(
                 (event: {
                   id: string;
                   logo: { url: string };
