@@ -21,7 +21,6 @@ export async function loader() {
     throw new Error(`HTTP error! status: ${response.status}`);
   }
   const data = await response.json();
-  console.log(data)
   return data;
 }
 
@@ -54,47 +53,56 @@ export default function Events() {
                 description: {text: string},
                 venue: {name: string}
               }) => (
-              <li key={event.id} className="event-card-container group relative flex flex-col overflow-hidden rounded-sm border border-gray-200 bg-white">
-                <div className="event-card-image__aspect-container">
-                  <img src={event.logo.url} className="event-card-image" />
-                </div>
-                <div className="flex flex-1 flex-col space-y-2 p-4">
-                  <h1 className="text-gray-900">
-                    <a href={event.url}>
-                      <span aria-hidden="true" className="absolute inset-0" />
-                      {event.name.text}
-                    </a>
-                  </h1>
-                  <p className="text-sm text-gray-500">{event.description.text}</p>
-                  <div className="flex">
-                    <div className="chip chip-yellow flex items-center">
-                      <svg className="h-6 w-6" fill="currentColor" viewBox="0 -960 960 960">
-                        <g>
-                          <circle cx="128" cy="128" r="128"></circle>
-                          <path
-                            d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"
-                            fill="#2c3441"
-                            fillRule="nonzero"
-                          ></path>
-                        </g>
-                      </svg>                      
-                      <p className="text-sm font-small">{new Date(event.start.local).toDateString()}</p>
+              <li key={event.id} className="event-card-container flex flex-col justify-between  relative overflow-hidden rounded-sm border border-gray-200 bg-white">
+
+
+                  <div>
+                    <div className="event-card-image__aspect-container">
+                      <img src={event.logo.url} className="event-card-image" />
+                    </div> 
+                    <div className="p-4">                  
+                      <a href={event.url}>
+                        <h1 className="text-gray-900">{event.name.text}</h1>
+                      </a>
+                      <p className="text-sm mt-2 text-gray-500">{event.description.text}</p>
+                    </div> 
+                  </div>
+                  <div className="flex justify-between items-center p-4 mb-2">
+                    <div className="flex">
+                      <div className="chip chip-yellow flex items-center">
+                        <svg className="h-4 w-4" fill="currentColor" viewBox="0 -960 960 960">
+                          <g>
+                            <circle cx="128" cy="128" r="128"></circle>
+                            <path
+                              d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"
+                              fill="#2c3441"
+                              fillRule="nonzero"
+                            ></path>
+                          </g>
+                        </svg>                      
+                        <p className="text-xs ml-1">{new Date(event.start.local).toDateString()}</p>
+                      </div>
+                      <div className="chip ml-1 chip-yellow flex items-center">
+                        <a href={event.url} className="flex items-center">
+                          <svg className="h-4 w-4" fill="currentColor" viewBox="0 -960 960 960">
+                            <g>
+                              <circle cx="128" cy="128" r="128"></circle>
+                              <path
+                                d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
+                                fill="#2c3441"
+                                fillRule="nonzero"
+                              ></path>
+                            </g>
+                          </svg>                       
+                          <p className="text-xs ml-1">{event.venue.name}</p>
+                        </a>
+                      </div>
                     </div>
-                    <div className="chip chip-red flex">
-                      <svg className="h-6 w-6" fill="currentColor" viewBox="0 -960 960 960">
-                        <g>
-                          <circle cx="128" cy="128" r="128"></circle>
-                          <path
-                            d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
-                            fill="#2c3441"
-                            fillRule="nonzero"
-                          ></path>
-                        </g>
-                      </svg>                       
-                      <p className="text-sm font-small">{event.venue.name}</p>
+                    <div>
+                      <a href={event.url} target="_blank" className="focus:outline-none text-white bg-yellow-gd hover:bg-yellow-gd-hover font-medium rounded-lg text-sm px-5 py-2.5 mb-2 ">Register</a>
                     </div>
                   </div>
-                </div>
+
               </li>
             ))}
           </ul>

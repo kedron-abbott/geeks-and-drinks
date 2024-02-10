@@ -39,7 +39,7 @@ export function defaultLandingPage({ t }: { t: TFunction }) {
         style: "simple",
         headline: "Geeks && Drinks",
         subheadline:
-          "Our goal is to create a safe and inclusive space for developers and geeks to share ideas, get inspired and build community. We do this by creating and hosting events that are both social and educational. ",
+          "Our mission is to create a safe and inclusive space for developers and geeks to share ideas, get inspired and build community. We do this by creating and hosting events that are both social and educational. ",
         image: "https://via.placeholder.com/720x600?text=Your%20Hero%20Image",
         topText: {
           text: "// a function for san antonio coders",

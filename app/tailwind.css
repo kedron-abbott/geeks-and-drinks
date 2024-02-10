@@ -158,11 +158,18 @@
 
   .chip {
     padding: 4px 8px;
-    border-radius: 20px;
-    color:#2c3441;
-    border-color: #2c3441;    
+    border-radius: 30px;
+    color:#2c3441;    
+  }
+  .chip-yellow {
+    background-color: #efefef;
   }
 
-  
+  .bg-yellow-gd {
+    background-color: #fea614;
+  }
+  .bg-yellow-gd-hover {
+    background-color: hsl(var(--pf, var(--p)) / var(--tw-bg-opacity));
+  }
 }
 

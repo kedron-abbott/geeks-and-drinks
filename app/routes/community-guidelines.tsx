@@ -15,15 +15,15 @@ export default function CommunityGuidelinesRoute() {
             <div className="text-center">              
               <MainHeading title="Community Guidelines" />
               <p className="mt-4 text-lg leading-6 text-gray-500">
-                  <span style={{color:"#fea614"}}>//</span> A Function for San Antonio Coders
-                </p>
+                <span style={{color:"#fea614"}}>//</span> A Function for San Antonio Coders
+              </p>
             </div>
             
             <div className="text-left mt-14">
                 <div className="flex mx-auto max-w-4xl">
                   <div>
                     <p className="mx-auto mt-4 max-w-4xl sm:text-xl sm:leading-relaxed">
-                      At Geeks and Drinks, our mission is [INSERT MISSION HERE], and this includes making sure everyone feels safe and welcomed at our events.{" "}
+                      At Geeks and Drinks, our mission is to create a safe and inclusive space for developers and geeks to share ideas, get inspired and build community. We do this by creating and hosting events that are both social and educational. Our goal is to make sure everyone feels safe and welcomed at our events.
                     </p>
                     <p className="mx-auto mt-4 max-w-4xl sm:text-xl sm:leading-relaxed">
                       If drinking, be responsible and have a safe plan to get home. Below are some options if you feel you’re unable to drive:
