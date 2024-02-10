@@ -51,8 +51,25 @@ export default function AboutRoute() {
               </p>
             </div>
 
-            <div className="mt-14">
-              <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
+            <hr className="divider" />
+
+            <div className="text-center">
+              <MainHeading title="History" />
+              <p className="mx-auto mt-4 max-w-4xl text-lg leading-6 text-gray-500">
+                Geeks & Drinks was founded in 2021 when Sharon and Monty moved to San Antonio and wanted a way to meet other geeky/techy friends. The first
+                meetups were often just 4 or 5 people talking about projects they were working on and as it grew they recognized there is a huge network of
+                remote workers in software engineering, cybersecurity and IT that didn’t have a community. Over the years that community has grown to over 1,700
+                and become not only a social outlet, but a support system and opportunity to find jobs. 
+              </p>
+            </div>
+
+            <hr className="divider" />
+
+            <div className="mt-4">
+              <div className="text-center">
+                <MainHeading title="Committee" />
+              </div>
+              <div className="mx-auto mt-10 grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
                 <ul className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2">
                   {people.map((person) => (
                     <li key={person.name}>
