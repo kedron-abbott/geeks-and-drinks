@@ -48,6 +48,7 @@ export function defaultLandingPage({ t }: { t: TFunction }) {
           {
             text: "Join Mailing List",
             href: "https://app.us20.list-manage.com/subscribe?u=c9cb2077e410a0c23be6409e3&id=5cc26c1303",
+            target: "_blank",
             isPrimary: true,
           },
           {
