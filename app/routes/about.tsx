@@ -47,7 +47,7 @@ export default function AboutRoute() {
               <MainHeading title="About Us" />
               <p className="mx-auto mt-4 max-w-4xl text-lg leading-6 text-gray-500">
                 Driven by our passion for tech, creating safe and inclusive spaces, and fostering community in San Antonio, our team is committed to making tech
-                feel accessible for everyone.
+                accessible for everyone.
               </p>
             </div>
 
