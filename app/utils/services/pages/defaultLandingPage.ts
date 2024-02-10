@@ -47,7 +47,7 @@ export function defaultLandingPage({ t }: { t: TFunction }) {
         cta: [
           {
             text: "Join Mailing List",
-            href: "#",
+            href: "https://app.us20.list-manage.com/subscribe?u=c9cb2077e410a0c23be6409e3&id=5cc26c1303",
             isPrimary: true,
           },
           {
