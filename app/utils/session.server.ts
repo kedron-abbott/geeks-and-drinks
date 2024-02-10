@@ -5,7 +5,7 @@ export type UserSession = {
   lng: string;
 };
 
-const sessionSecret = process.env.SESSION_SECRET;
+const sessionSecret = process.env.SESSION_SECRET || "superSe3ret"; //TODO: FIX THISSS ASAP
 if (!sessionSecret) {
   throw new Error("SESSION_SECRET must be set");
 }
