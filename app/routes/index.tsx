@@ -8,7 +8,6 @@ import { PageBlockDto } from "~/application/dtos/marketing/PageBlockDto";
 import { useLoaderData, useSearchParams } from "@remix-run/react";
 import { getPageConfiguration, PageConfiguration } from "~/utils/services/pages/pagesService";
 import { getUserInfo, UserSession } from "~/utils/session.server";
-import PageBlockEditMode from "~/components/front/blocks/PageBlockEditMode";
 
 type LoaderData = {
   userSession: UserSession;
@@ -41,7 +40,6 @@ export default function IndexRoute() {
 
   return (
     <div>
-      <PageBlockEditMode items={blocks} onSetBlocks={(e) => setBlocks(e)} />
       <PageBlocks items={blocks} editMode={isEditMode()} onChange={(e) => setBlocks(e)} />
     </div>
   );
