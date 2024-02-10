@@ -49,23 +49,18 @@ export default function AboutRoute() {
                 Driven by our passion for tech, creating safe and inclusive spaces, and fostering community in San Antonio, our team is committed to making tech
                 accessible for everyone.
               </p>
-            </div>
-
-            <hr className="divider" />
-
-            <div className="text-center">
-              <MainHeading title="History" />
               <p className="mx-auto mt-4 max-w-4xl text-lg leading-6 text-gray-500">
                 Geeks & Drinks was founded in 2021 when Sharon and Monty moved to San Antonio and wanted a way to meet other geeky/techy friends. The first
                 meetups were often just 4 or 5 people talking about projects they were working on and as it grew they recognized there is a huge network of
                 remote workers in software engineering, cybersecurity and IT that didn’t have a community. Over the years that community has grown to over 1,700
-                and become not only a social outlet, but a support system and opportunity to find jobs. 
-              </p>
+                and become not only a social outlet, but a support system and opportunity to find jobs.     </p>          
             </div>
 
-            <hr className="divider" />
 
-            <div className="mt-4">
+
+
+
+            <div className="mt-14">
               <div className="text-center">
                 <MainHeading title="Committee" />
               </div>

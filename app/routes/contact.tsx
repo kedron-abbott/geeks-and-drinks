@@ -64,7 +64,7 @@ export default function ContactRoute() {
           <div className="relative mx-auto w-full max-w-7xl overflow-hidden px-4 py-12 sm:px-6 sm:py-6 lg:px-8">
             <div className="text-center">
               <MainHeading title="Contact Us" />
-              <p className="mt-4 text-lg leading-6 text-gray-500">Let’s connect! </p>
+              <p className="mt-4 text-lg leading-6 text-gray-500"><span style={{color:"#fea614"}}>//</span> Let’s connect! </p>
             </div>
 
             <div className="mx-auto mt-14 max-w-xl">
