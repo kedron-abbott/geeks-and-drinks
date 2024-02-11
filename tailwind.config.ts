@@ -69,7 +69,7 @@ export default {
     themes: [
       {
         mytheme: {
-          primary: themeColor[500],
+          primary: "#fea614",
           secondary: accentColor[200],
           accent: "#c4b5fd",
           neutral: "#3D4451",

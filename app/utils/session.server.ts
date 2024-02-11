@@ -5,7 +5,7 @@ export type UserSession = {
   lng: string;
 };
 
-const sessionSecret = process.env.SESSION_SECRET;
+const sessionSecret = process.env.SESSION_SECRET || "superSe3ret"; //TODO: FIX THISSS ASAP
 if (!sessionSecret) {
   throw new Error("SESSION_SECRET must be set");
 }
@@ -31,7 +31,7 @@ export function getUserSession(request: Request) {
 
 export async function getUserInfo(request: Request): Promise<UserSession> {
   const session = await getUserSession(request);
-  const lightOrDarkMode = session.get("lightOrDarkMode") ?? "";
+  const lightOrDarkMode = session.get("lightOrDarkMode") ?? "dark";
   const lng = session.get("lng") ?? "en";
   return {
     lightOrDarkMode,

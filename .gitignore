@@ -19,6 +19,7 @@ node_modules
 
 prisma/dev.db
 .env
+.env.fly
 .env.production
 .env.fly.production
 

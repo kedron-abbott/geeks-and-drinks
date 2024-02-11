@@ -79,7 +79,7 @@ function downloadBlocks(blocks: PageBlockDto[]) {
     return JSON.stringify(blocks, null, "\t");
   } catch (e: any) {
     // eslint-disable-next-line no-console
-    console.log(e.message);
+    // console.log(e.message);
     return "{}";
   }
 }

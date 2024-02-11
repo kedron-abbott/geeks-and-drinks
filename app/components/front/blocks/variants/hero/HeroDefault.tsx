@@ -3,11 +3,26 @@ import { HeroBlockDto } from "~/application/dtos/marketing/HeroBlockDto";
 import clsx from "clsx";
 import { useTranslation } from "react-i18next";
 import { Fragment } from "react";
+import bg from "~/assets/img/sa-background.jpg";
+import bgDark from "~/assets/img/sa-background-dark.jpg";
+import { useRootData } from "~/utils/data/useRootData";
+
 
 export default function HeroDefault({ item }: { item: HeroBlockDto }) {
   const { t } = useTranslation();
+  const { userSession } = useRootData();
+
   return (
-    <section>
+    <section style={{
+      backgroundImage:
+      userSession?.lightOrDarkMode === 'dark' 
+      ? `url(${bgDark})` 
+      : `url(${bg})`,
+      backgroundSize: "cover",   
+      backgroundRepeat: "no-repeat",
+      height: "calc(100vh - 96px)",
+      display: "flex",
+    }}>
       <div className="mx-auto max-w-screen-xl px-4 py-16 lg:flex lg:items-center">
         <div className="mx-auto max-w-7xl text-center md:max-w-6xl">
           <div className="mb-4">
@@ -24,8 +39,16 @@ export default function HeroDefault({ item }: { item: HeroBlockDto }) {
             )}
           </div>
           <h1 className="flex flex-col text-4xl font-extrabold sm:text-5xl md:text-5xl lg:text-7xl">
+            <div>
+            <span style={{
+              color: "#fea614",
+            }}> &#65371;  </span>
             {t(item.headline)}
+            <span style={{
+              color: "#fea614",            
+            }}> &#65373; </span>            
             {/* <strong className="font-extrabold text-theme-700 sm:block">Increase Conversion.</strong> */}
+            </div>
           </h1>
 
           <p className="mx-auto mt-4 max-w-4xl sm:text-xl sm:leading-relaxed">{t(item.subheadline)}</p>
