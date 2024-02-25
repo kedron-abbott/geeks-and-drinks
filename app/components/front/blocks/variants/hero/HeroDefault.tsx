@@ -27,7 +27,7 @@ export default function HeroDefault({ item }: { item: HeroBlockDto }) {
         <div className="mx-auto max-w-7xl text-center md:max-w-6xl">
           <div className="mb-4">
             {item.topText && (
-              <span className="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
+              <span className="block comment text-sm font-semibold uppercase tracking-wide text-slate-500 sm:text-base lg:text-sm xl:text-base">
                 {t(item.topText.text ?? "")}{" "}
                 {item.topText.link && (
                   <Link to={item.topText.link.href ?? ""} className="text-theme-600 font-semibold">
@@ -38,7 +38,7 @@ export default function HeroDefault({ item }: { item: HeroBlockDto }) {
               </span>
             )}
           </div>
-          <h1 className="flex flex-col text-4xl font-extrabold sm:text-5xl md:text-5xl lg:text-7xl">
+          <h1 className="flex flex-col text-3xl font-extrabold sm:text-5xl md:text-5xl lg:text-7xl">
             <div>
             <span style={{
               color: "#fea614",
@@ -86,14 +86,14 @@ export default function HeroDefault({ item }: { item: HeroBlockDto }) {
                       <a
                         href={item.bottomText.link.href ?? ""}
                         target={item.bottomText.link.target}
-                        className="border-accent-500 border-b border-dashed text-sm italic text-gray-500 hover:border-dotted dark:border-cyan-300"
+                        className="border-accent-500 border-b border-dashed text-sm italic text-slate-500 hover:border-dotted dark:border-cyan-300"
                       >
                         {t(item.bottomText.link.text ?? "")}
                       </a>
                     ) : (
                       <Link
                         to={item.bottomText.link.href ?? ""}
-                        className="border-accent-500 border-b border-dashed text-sm italic text-gray-500 hover:border-dotted dark:border-cyan-300"
+                        className="border-accent-500 border-b border-dashed text-sm italic text-slate-500 hover:border-dotted dark:border-cyan-300"
                       >
                         {t(item.bottomText.link.text ?? "")}
                       </Link>

@@ -13,7 +13,7 @@ export default function FaqSimple({ item }: { item: FaqBlockDto }) {
             {item.headline && (
               <h2 className="text-center text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">{t(item.headline)}</h2>
             )}
-            {item.subheadline && <p className="mx-auto max-w-2xl text-center text-xl text-gray-500">{t(item.subheadline)}</p>}
+            {item.subheadline && <p className="mx-auto max-w-2xl text-center text-xl text-slate-500">{t(item.subheadline)}</p>}
           </div>
         )}
         <div className="flex flex-wrap">

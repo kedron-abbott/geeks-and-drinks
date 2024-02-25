@@ -10,7 +10,7 @@ export default function GalleryCarousel({ item }: { item: GalleryBlockDto }) {
         <div>
           {item.topText && <h2 className="text-theme-600 text-base font-semibold uppercase tracking-wider">{item.topText}</h2>}
           {item.headline && <p className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">{t(item.headline)}</p>}
-          {item.subheadline && <p className="mx-auto mt-5 max-w-prose text-base text-gray-500">{t(item.subheadline)}</p>}
+          {item.subheadline && <p className="mx-auto mt-5 max-w-prose text-base text-slate-500">{t(item.subheadline)}</p>}
         </div>
         <div className="mx-auto">
           <Carousel images={item.images} />

@@ -41,36 +41,36 @@ export default function AboutRoute() {
     <div>
       <div className="relative">
         <Header />
-        <div className="bg-white dark:bg-gray-900">
+        <div className="bg-white dark:bg-slate-900">
           <div className="relative mx-auto w-full max-w-7xl overflow-hidden px-4 py-12 sm:px-6 sm:py-6 lg:px-8">
             <div className="text-center">
               <MainHeading title="About Us" />
-              <p className="mx-auto mt-4 max-w-4xl text-lg leading-6 text-gray-500">
+              <p className="mt-4 text-lg leading-6 text-slate-500"><span style={{color:"#fea614"}}>//</span> Just a Bunch of Geeks! </p>
+
+              <p className="mx-auto mt-10 max-w-4xl sm:text-xl sm:leading-relaxed">
                 Driven by our passion for tech, creating safe and inclusive spaces, and fostering community in San Antonio, our team is committed to making tech
                 accessible for everyone.
               </p>
-              <p className="mx-auto mt-4 max-w-4xl text-lg leading-6 text-gray-500">
+              <p className="mx-auto mt-4 max-w-4xl sm:text-xl sm:leading-relaxed">
                 Geeks & Drinks was founded in 2021 when Sharon and Monty moved to San Antonio and wanted a way to meet other geeky/techy friends. The first
                 meetups were often just 4 or 5 people talking about projects they were working on and as it grew they recognized there is a huge network of
                 remote workers in software engineering, cybersecurity and IT that didn’t have a community. Over the years that community has grown to over 1,700
                 and become not only a social outlet, but a support system and opportunity to find jobs.     </p>          
             </div>
 
-
-
-
-
             <div className="mt-14">
               <div className="text-center">
                 <MainHeading title="Committee" />
+                <p className="mt-4 text-lg leading-6 text-slate-500"><span style={{color:"#fea614"}}>//</span> Meet the Team! </p>
               </div>
+
               <div className="mx-auto mt-10 grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
                 <ul className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2">
                   {people.map((person) => (
                     <li key={person.name}>
                       <img className="aspect-[3/2] w-full rounded-2xl object-cover" src={person.imagePath} alt="" />
                       <h3 className="mt-6 text-lg font-semibold leading-8">{person.name}</h3>
-                      <p className="text-base leading-7">{person.role}</p>
+                      <p className="text-base leading-7 comment text-slate-500"> {person.role}</p>
                       <p className="mt-4 text-base leading-7">{person.bio}</p>
                       <ul className="mt-6 flex gap-x-6">
                         <li>
@@ -92,7 +92,7 @@ export default function AboutRoute() {
                 </ul>
               </div>
             </div>
-            <div className="flex text-left">
+            <div className="flex mt-4 text-left">
               <a href="/contact" className="btn-primary btn-lg btn w-full sm:w-auto">
                 Interested in Volunteering? Contact Us <span aria-hidden="true"> &rarr;</span>
               </a>

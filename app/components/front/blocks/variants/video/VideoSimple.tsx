@@ -11,7 +11,7 @@ export default function VideoSimple({ item }: { item: VideoBlockDto }) {
           {(item.headline || item.subheadline) && (
             <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
               {item.headline && <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">{t(item.headline)}</h2>}
-              {item.subheadline && <p className="text-xl text-gray-500">{t(item.subheadline)}</p>}
+              {item.subheadline && <p className="text-xl text-slate-500">{t(item.subheadline)}</p>}
             </div>
           )}
           <div className="aspect-w-16 aspect-h-5 mx-auto my-12 mt-10 max-w-2xl">

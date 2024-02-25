@@ -114,7 +114,7 @@ export default function PageBlocks({ items, editMode, onChange }: { items: PageB
 
   return (
     <Fragment>
-      <div className={clsx("relative overflow-hidden bg-white text-gray-800 dark:bg-gray-900 dark:text-slate-200", editMode && "")}>
+      <div className={clsx("relative overflow-hidden bg-white text-gray-800 dark:bg-slate-900 dark:text-slate-200", editMode && "")}>
         {/* {editMode && items.length > 0 && <AddBlockButton className={"py-8"} onAdd={(type) => addBlock(type, 0)} />} */}
 
         {items.map((item, idx) => {
@@ -240,7 +240,7 @@ function AddBlockButton({ onAdd, className }: { onAdd: (type: string) => void; c
                   }}
                   className="group flex w-full flex-col items-center space-y-2 rounded-md border border-gray-200 bg-gray-50 p-2 hover:border-gray-300 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-1"
                 >
-                  {/* <PlusIcon className="h-3 w-3 text-gray-500 group-hover:text-gray-800" /> */}
+                  {/* <PlusIcon className="h-3 w-3 text-slate-500 group-hover:text-gray-800" /> */}
                   <div>{PageBlockUtils.getTypeTitle(type)}</div>
                 </button>
               );

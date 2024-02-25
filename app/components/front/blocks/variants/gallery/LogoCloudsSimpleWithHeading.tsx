@@ -4,7 +4,7 @@ import { LogoCloudDto } from "~/application/dtos/marketing/LogoCloudsBlockDto";
 export default function LogoCloudsSimpleWithHeading({ headline, items }: { headline?: string; items: LogoCloudDto[] }) {
   const { t } = useTranslation();
   return (
-    <div className="bg-theme-100 py-8 dark:bg-gray-800">
+    <div className="bg-theme-100 py-8 dark:bg-slate-800">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8">
           {headline && (

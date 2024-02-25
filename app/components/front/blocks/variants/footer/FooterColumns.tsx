@@ -13,7 +13,7 @@ export default function FooterColumns({ item }: { item: FooterBlockDto }) {
           <div className="title-font flex items-center justify-center font-medium text-gray-900 dark:text-white md:justify-start">
             <Icon className="h-10" />
           </div>
-          {item.text && <p className="mt-2 hidden text-sm text-gray-500 md:block">{t(item.text)}</p>}
+          {item.text && <p className="mt-2 hidden text-sm text-slate-500 md:block">{t(item.text)}</p>}
           {item.socials && (
             <div className="mx-auto mt-2 flex justify-center space-x-2 md:justify-start">
               <Socials item={item.socials} />
@@ -30,11 +30,11 @@ export default function FooterColumns({ item }: { item: FooterBlockDto }) {
                     return (
                       <li key={idx}>
                         {item.href.startsWith("http") ? (
-                          <a href={item.href} target={item.target} className="text-gray-600 hover:text-gray-800">
+                          <a href={item.href} target={item.target} className="text-gray-600 hover:text-slate-500">
                             {t(item.name)}
                           </a>
                         ) : (
-                          <Link to={item.href} className="text-gray-600 hover:text-gray-800">
+                          <Link to={item.href} className="text-gray-600 hover:text-slate-500">
                             {t(item.name)}
                           </Link>
                         )}
@@ -47,9 +47,9 @@ export default function FooterColumns({ item }: { item: FooterBlockDto }) {
           })}
         </div>
       </div>
-      <div className="bg-gray-100 dark:bg-gray-800">
+      <div className="bg-gray-100 dark:bg-slate-950">
         <div className="container mx-auto flex flex-col flex-wrap px-5 py-4 sm:flex-row">
-          <div className="text-center text-sm text-gray-500 sm:text-left">{t("copyright")}</div>
+          <div className="text-center text-sm text-slate-500 sm:text-left">{t("copyright")}</div>
         </div>
       </div>
     </footer>

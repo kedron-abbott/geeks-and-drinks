@@ -92,11 +92,11 @@ export default function NewsletterRoute() {
     <div>
       <div className="relative">
         <Header />
-        <div className="bg-white dark:bg-gray-900">
+        <div className="bg-white dark:bg-slate-900">
           <div className="relative mx-auto w-full max-w-7xl overflow-hidden px-4 py-12 sm:px-6 sm:py-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-3xl font-extrabold tracking-tight text-gray-800 dark:text-slate-200 sm:text-4xl">{t("newsletter.headline")}</h1>
-              <p className="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-400">{t("newsletter.subheadline")}</p>
+              <p className="mt-4 text-lg leading-6 text-slate-500 dark:text-gray-400">{t("newsletter.subheadline")}</p>
             </div>
             <div className="mx-auto mt-14 max-w-xl">
               <Form ref={formRef} replace method="post" aria-hidden={state === "success"} className="mt-9 grid grid-cols-1 gap-2 sm:grid-cols-2">
@@ -114,7 +114,7 @@ export default function NewsletterRoute() {
                       name="first_name"
                       id="first_name"
                       autoComplete="given-name"
-                      className="input-bordered input w-full bg-gray-50 dark:bg-gray-800"
+                      className="input-bordered input w-full bg-gray-50 dark:bg-slate-800"
                     />
                   </div>
                 </div>
@@ -129,7 +129,7 @@ export default function NewsletterRoute() {
                       name="last_name"
                       id="last_name"
                       autoComplete="family-name"
-                      className="input-bordered input w-full bg-gray-50 dark:bg-gray-800"
+                      className="input-bordered input w-full bg-gray-50 dark:bg-slate-800"
                     />
                   </div>
                 </div>
@@ -147,7 +147,7 @@ export default function NewsletterRoute() {
                       name="email"
                       type="email"
                       autoComplete="email"
-                      className="input-bordered input w-full bg-gray-50 dark:bg-gray-800"
+                      className="input-bordered input w-full bg-gray-50 dark:bg-slate-800"
                     />
                   </div>
                 </div>

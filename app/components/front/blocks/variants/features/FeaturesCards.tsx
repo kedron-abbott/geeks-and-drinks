@@ -10,10 +10,10 @@ export default function FeaturesCards({ item }: { item: FeaturesBlockDto }) {
       <div className="container mx-auto space-y-8 px-5 py-24 sm:space-y-12">
         <div className="space-y-5 text-center sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
           <div className="space-y-1">
-            {item.topText && <h2 className="text-sm font-semibold uppercase leading-8 text-gray-500">{t(item.topText)}</h2>}
+            {item.topText && <h2 className="text-sm font-semibold uppercase leading-8 text-slate-500">{t(item.topText)}</h2>}
             <h2 className="text-center text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">{t(item.headline)}</h2>
           </div>
-          <p className="mx-auto max-w-2xl text-center text-xl text-gray-500">{t(item.subheadline)}</p>
+          <p className="mx-auto max-w-2xl text-center text-xl text-slate-500">{t(item.subheadline)}</p>
         </div>
 
         <div className="-m-4 flex flex-wrap">
@@ -33,7 +33,7 @@ export default function FeaturesCards({ item }: { item: FeaturesBlockDto }) {
                   item.columns === 8 && "lg:w-1/8 w-full"
                 )}
               >
-                <div className="flex h-full flex-col rounded-lg bg-gray-100 p-8 dark:bg-gray-800">
+                <div className="flex h-full flex-col rounded-lg bg-gray-100 p-8 dark:bg-slate-800">
                   <div className="mb-3 flex items-center">
                     <div className="bg-theme-500 mr-3 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full text-white">
                       {feature.img ? (

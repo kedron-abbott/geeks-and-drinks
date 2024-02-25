@@ -18,7 +18,7 @@ export default function NewsletterRightForm({ item }: { item: NewsletterBlockDto
         <fetcher.Form
           method="post"
           action="/newsletter"
-          className="mt-10 flex w-full flex-col rounded-lg bg-gray-100 p-8 dark:bg-gray-800 md:ml-auto md:mt-0 md:w-1/2 lg:w-2/6"
+          className="mt-10 flex w-full flex-col rounded-lg bg-gray-100 p-8 dark:bg-slate-800 md:ml-auto md:mt-0 md:w-1/2 lg:w-2/6"
         >
           <h2 className="title-font mb-5 text-lg font-medium text-gray-900 dark:text-white">Sign Up</h2>
           <div className="relative mb-4">
@@ -63,7 +63,7 @@ export default function NewsletterRightForm({ item }: { item: NewsletterBlockDto
           <div className="mt-3 text-center text-gray-900 dark:text-white">
             {fetcher.data?.success ? <p>{fetcher.data.success}</p> : fetcher.data?.error ? <p>{fetcher.data.error}</p> : <div className="invisible">...</div>}
           </div>
-          <div className="mt-3 text-xs text-gray-500">
+          <div className="mt-3 text-xs text-slate-500">
             {t("newsletter.weCare")}{" "}
             <Link to="/privacy-policy" className="font-medium underline">
               {t("privacy.headline")}
