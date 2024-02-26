@@ -30,11 +30,11 @@ export default function FooterColumns({ item }: { item: FooterBlockDto }) {
                     return (
                       <li key={idx}>
                         {item.href.startsWith("http") ? (
-                          <a href={item.href} target={item.target} className="text-gray-600 hover:text-slate-500">
+                          <a href={item.href} target={item.target} className="text-slate-500 hover:text-slate-400">
                             {t(item.name)}
                           </a>
                         ) : (
-                          <Link to={item.href} className="text-gray-600 hover:text-slate-500">
+                          <Link to={item.href} className="text-slate-500 hover:text-slate-400">
                             {t(item.name)}
                           </Link>
                         )}

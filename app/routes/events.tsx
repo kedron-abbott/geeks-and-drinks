@@ -68,9 +68,6 @@ export default function Events() {
                       className="event-card-container relative flex flex-col  justify-between overflow-hidden rounded-sm border border-slate-700 dark:bg-slate-900 bg-white"
                     >
                       <div>
-                        {/* <div className="event-card-image__aspect-container">
-                          <img src={event.logo.url} className="event-card-image" />
-                        </div> */}
                         <div className="dark:bg-slate-900 text-center py-10">
                         <h1 className="my-10 flex flex-col text-2xl font-extrabold sm:text-2xl md:text-5xl">
                           <p>
@@ -91,8 +88,8 @@ export default function Events() {
                           <p className="mt-2 text-lg sm:text-xl sm:leading-relaxed text-slate-500">{event.description.text}</p>
                         </div>
                       </div>
-                      <div className="mb-2 flex items-center justify-between p-4">
-                        <div className="flex">
+                      <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-between p-4">
+                        <div className="flex md:col-span-2">
                           <div className="chip bg-slate-950 flex items-center">
                             <svg className="h-4 w-4" fill="currentColor" viewBox="0 -960 960 960">
                               <g>
@@ -122,11 +119,11 @@ export default function Events() {
                             </a>
                           </div>
                         </div>
-                        <div>
+                        <div className="flex justify-end mt-10 sm:mt-0">
                           <a
                             href={event.url}
                             target="_blank"
-                            className="bg-yellow-gd hover:bg-yellow-gd-hover mb-2 rounded-lg px-5 py-2.5 text-sm font-medium text-white dark:text-slate-900 focus:outline-none "
+                            className="btn-md btn w-full sm:w-auto self-end btn-primary"
                           >
                             Register
                           </a>
