@@ -83,9 +83,9 @@ export default function Events() {
 
                         <div className="p-4">
                           <a href={event.url}>
-                            <h1 className="text-gray-900 text-xl sm:text-2xl dark:text-slate-200">{event.name.text}</h1>
+                            <h1 className="text-gray-900 text-xl font-bold sm:text-2xl dark:text-slate-200">{event.name.text}</h1>
                           </a>
-                          <p className="mt-2 text-lg sm:text-xl sm:leading-relaxed text-slate-500">{event.description.text}</p>
+                          <p className="mt-2 text-lg sm:text-lg sm:leading-relaxed text-slate-500">{event.description.text}</p>
                         </div>
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-between p-4">

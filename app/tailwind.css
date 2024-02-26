@@ -231,5 +231,7 @@
     background-color: #0f172a;
   }
   
-
+  .menu :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):hover) {
+    background-color: transparent;
+  }
 }
