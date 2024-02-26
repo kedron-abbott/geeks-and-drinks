@@ -29,10 +29,10 @@ export default function CommunityGuidelinesRoute() {
                     </div>
                     <div>
                       <div className="highlight-block ma-2">
-                        <p className="mx-auto mt-4 sm:mt-0 max-w-4xl font-bold sm:text-xl sm:leading-relaxed">
+                        <p className="mx-auto mt-4 sm:mt-0 max-w-4xl sm:text-xl sm:leading-relaxed">
                           If drinking, be responsible and have a safe plan to get home. Below are some options if you feel you’re unable to drive:
                         </p> 
-                        <ul className="list-inside text-lg font-bold list-decimal mt-3 ml-3">
+                        <ul className="list-inside text-lg list-decimal mt-3 ml-3">
                           <li className="mb-1">Wait it out</li>
                           <li className="mb-1">Get an Uber</li>
                           <li>Get a ride from someone you trust</li>
