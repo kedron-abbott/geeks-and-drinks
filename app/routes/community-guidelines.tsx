@@ -9,39 +9,43 @@ export default function CommunityGuidelinesRoute() {
     <div>
       <div className="relative">
         <Header />
-        <div className="bg-white dark:bg-gray-900">
+        <div className="bg-white dark:bg-slate-900">
           <div className="relative mx-auto w-full max-w-7xl overflow-hidden px-4 py-12 sm:px-6 sm:py-6 lg:px-8">
             
             <div className="text-center">              
               <MainHeading title="Community Guidelines" />
-              <p className="mt-4 text-lg leading-6 text-gray-500">
+              <p className="mt-4 text-lg leading-6 text-slate-500">
                 <span style={{color:"#fea614"}}>//</span> A Function for San Antonio Coders
               </p>
             </div>
             
-            <div className="text-left mt-14">
+            <div className="text-left mt-10">
                 <div className="flex mx-auto max-w-4xl">
-                  <div>
-                    <p className="mx-auto mt-4 max-w-4xl sm:text-xl sm:leading-relaxed">
-                      At Geeks and Drinks, our mission is to create a safe and inclusive space for developers and geeks to share ideas, get inspired and build community. We do this by creating and hosting events that are both social and educational. Our goal is to make sure everyone feels safe and welcomed at our events.
-                    </p>
-                    <p className="mx-auto mt-4 max-w-4xl sm:text-xl sm:leading-relaxed">
-                      If drinking, be responsible and have a safe plan to get home. Below are some options if you feel you’re unable to drive:
-                      <ul className="list-inside list-decimal mt-3">
-                        <li>Wait it out</li>
-                        <li>Get an Uber</li>
-                        <li>Get a ride from someone you trust</li>
-                      </ul>
-                    </p>                    
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+                    <div>
+                      <p className="mx-auto mt-4 sm:mt-0 max-w-4xl sm:text-xl sm:leading-relaxed">
+                        At Geeks and Drinks, our mission is to create a safe and inclusive space for developers and geeks to share ideas, get inspired and build community. We do this by creating and hosting events that are both social and educational. Our goal is to make sure everyone feels safe and welcomed at our events.
+                      </p>
+                    </div>
+                    <div>
+                      <div className="highlight-block ma-2">
+                        <p className="mx-auto mt-4 sm:mt-0 max-w-4xl sm:text-xl sm:leading-relaxed">
+                          If drinking, be responsible and have a safe plan to get home. Below are some options if you feel you’re unable to drive:
+                        </p> 
+                        <ul className="list-inside text-lg list-decimal mt-3 ml-3">
+                          <li className="mb-1">Wait it out</li>
+                          <li className="mb-1">Get an Uber</li>
+                          <li>Get a ride from someone you trust</li>
+                        </ul>
+                      </div>
+                    </div>                   
                   </div>
-                  <div>
-                    <img src={logo} alt="geeks and drinks"/>
-                  </div>
+
                 </div>
 
 
 
-                <p className="mx-auto mt-4 max-w-4xl text-lg font-semibold sm:text-xl sm:leading-relaxed">
+                <p className="mx-auto mt-14 max-w-4xl text-lg font-semibold sm:text-xl sm:leading-relaxed">
                   We do not tolerate harassment or abuse of any kind.{" "}
                 </p>
 

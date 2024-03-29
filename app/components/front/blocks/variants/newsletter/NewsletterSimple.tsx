@@ -15,8 +15,8 @@ export default function NewsletterSimple({ item }: { item: NewsletterBlockDto })
           {item.headline && (
             <h2 className="text-center text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">{t(item.headline)}</h2>
           )}
-          {item.subheadline && <p className="mx-auto max-w-3xl text-center text-xl text-gray-500">{t(item.subheadline)}</p>}
-          <div className="mt-3 text-sm text-gray-500">
+          {item.subheadline && <p className="mx-auto max-w-3xl text-center text-xl text-slate-500">{t(item.subheadline)}</p>}
+          <div className="mt-3 text-sm text-slate-500">
             {t("newsletter.weCare")}{" "}
             <Link to="/privacy-policy" className="font-medium underline">
               {t("privacy.headline")}
@@ -33,7 +33,7 @@ export default function NewsletterSimple({ item }: { item: NewsletterBlockDto })
               id="email"
               name="email"
               required
-              className="focus:border-theme-500 focus:ring-theme-200 dark:focus:ring-theme-800 w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:bg-transparent focus:ring-2 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400"
+              className="focus:border-theme-500 focus:ring-theme-200 dark:focus:ring-theme-800 w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:bg-transparent focus:ring-2 dark:border-gray-700 dark:bg-slate-800 dark:text-gray-400"
             />
           </div>
           <div className="flex w-full items-center space-x-4">
@@ -46,7 +46,7 @@ export default function NewsletterSimple({ item }: { item: NewsletterBlockDto })
                 id="first_name"
                 name="first_name"
                 required
-                className="focus:border-theme-500 focus:ring-theme-200 dark:focus:ring-theme-800 w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:bg-transparent focus:ring-2 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400"
+                className="focus:border-theme-500 focus:ring-theme-200 dark:focus:ring-theme-800 w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:bg-transparent focus:ring-2 dark:border-gray-700 dark:bg-slate-800 dark:text-gray-400"
               />
             </div>
             <div className="relative w-1/2 flex-grow">
@@ -58,7 +58,7 @@ export default function NewsletterSimple({ item }: { item: NewsletterBlockDto })
                 id="last_name"
                 name="last_name"
                 required
-                className="focus:border-theme-500 focus:ring-theme-200 dark:focus:ring-theme-800 w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:bg-transparent focus:ring-2 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400"
+                className="focus:border-theme-500 focus:ring-theme-200 dark:focus:ring-theme-800 w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:bg-transparent focus:ring-2 dark:border-gray-700 dark:bg-slate-800 dark:text-gray-400"
               />
             </div>
           </div>

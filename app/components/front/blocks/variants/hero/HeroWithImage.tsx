@@ -12,7 +12,7 @@ export default function HeroWithImage({ item }: { item: HeroBlockDto }) {
         <div className="mb-16 flex flex-col items-center text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
           <div className="mb-4">
             {item.topText && (
-              <span className="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
+              <span className="block text-sm font-semibold uppercase tracking-wide text-slate-500 sm:text-base lg:text-sm xl:text-base">
                 {t(item.topText.text ?? "")}{" "}
                 {item.topText.link && (
                   <Link to={item.topText.link.href ?? ""} className="text-theme-600 font-semibold">
@@ -52,14 +52,14 @@ export default function HeroWithImage({ item }: { item: HeroBlockDto }) {
                       <a
                         href={item.bottomText.link.href ?? ""}
                         target={item.bottomText.link.target}
-                        className="border-accent-500 border-b border-dashed text-sm italic text-gray-500 hover:border-dotted dark:border-cyan-300"
+                        className="border-accent-500 border-b border-dashed text-sm italic text-slate-500 hover:border-dotted dark:border-cyan-300"
                       >
                         {t(item.bottomText.link.text ?? "")}
                       </a>
                     ) : (
                       <Link
                         to={item.bottomText.link.href ?? ""}
-                        className="border-accent-500 border-b border-dashed text-sm italic text-gray-500 hover:border-dotted dark:border-cyan-300"
+                        className="border-accent-500 border-b border-dashed text-sm italic text-slate-500 hover:border-dotted dark:border-cyan-300"
                       >
                         {t(item.bottomText.link.text ?? "")}
                       </Link>

@@ -34,7 +34,7 @@ export default function Carousel({ images }: Props) {
     <div className="relative mx-auto w-full">
       <div className="mb-2 flex flex-col space-y-3 text-left">
         {/* <h3 className="text-lg font-bold">{currentImage?.group}</h3> */}
-        <div className=" flex space-x-1 text-sm font-medium italic dark:bg-gray-900">
+        <div className=" flex space-x-1 text-sm font-medium italic dark:bg-slate-900">
           <span className=" ">
             {currentIndex + 1}/{images.length}
           </span>

@@ -27,7 +27,7 @@ export default function HeaderSimple({ item }: { item: HeaderBlockDto }) {
             </Button>
             <Dropdown.Menu
               tabIndex={0}
-              className="menu-compact bg-base-100 z-10 mt-3 w-52 rounded-lg border border-gray-200 p-2 dark:border-gray-700 dark:bg-gray-900"
+              className="menu-compact bg-base-100 z-10 mt-3 w-52 rounded-lg border border-gray-200 p-2 dark:border-gray-700 dark:bg-slate-900"
             >
               {item.links.map((item, idx) => {
                 return (
@@ -38,7 +38,7 @@ export default function HeaderSimple({ item }: { item: HeaderBlockDto }) {
                         target={item.target}
                         className={clsx(
                           "overflow-hidden rounded-md text-base font-medium leading-6 transition duration-150 ease-in-out focus:outline-none",
-                          !isCurrent(item.path ?? "") && "text-gray-500 hover:text-gray-700 dark:hover:text-gray-300",
+                          !isCurrent(item.path ?? "") && "text-slate-500 hover:text-gray-700 dark:hover:text-gray-300",
                           isCurrent(item.path ?? "") && "text-gray-900 dark:text-white"
                         )}
                       >
@@ -46,13 +46,13 @@ export default function HeaderSimple({ item }: { item: HeaderBlockDto }) {
                       </Dropdown.Item>
                     ) : (
                       <li tabIndex={0}>
-                        <div className="justify-between text-gray-500 hover:text-gray-700 dark:hover:text-gray-300">
+                        <div className="justify-between text-slate-500 hover:text-gray-700 dark:hover:text-gray-300">
                           {t(item.title)}
                           <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24">
                             <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                           </svg>
                         </div>
-                        <ul className="bg-base-100 z-10 rounded-lg border border-gray-200 p-2 dark:border-gray-700 dark:bg-gray-900">
+                        <ul className="bg-base-100 z-10 rounded-lg border border-gray-200 p-2 dark:border-gray-700 dark:bg-slate-900">
                           {item.items.map((item, idx) => {
                             return (
                               <li key={idx}>
@@ -94,7 +94,7 @@ export default function HeaderSimple({ item }: { item: HeaderBlockDto }) {
                     <Menu.Item
                       className={clsx(
                         "overflow-hidden rounded-md text-base font-medium leading-6 transition duration-150 ease-in-out focus:outline-none",
-                        !isCurrent(item.path ?? "") && "text-gray-500 hover:text-gray-700 dark:hover:text-gray-300",
+                        !isCurrent(item.path ?? "") && "text-slate-500 hover:text-gray-700 dark:hover:text-gray-300",
                         isCurrent(item.path ?? "") && "text-gray-900 dark:text-white"
                       )}
                     >
@@ -111,7 +111,7 @@ export default function HeaderSimple({ item }: { item: HeaderBlockDto }) {
                       <div
                         className={clsx(
                           "overflow-hidden rounded-md text-base font-medium leading-6 transition duration-150 ease-in-out focus:outline-none",
-                          !isCurrent(item.path ?? "") && "text-gray-500 hover:text-gray-700 dark:hover:text-gray-300",
+                          !isCurrent(item.path ?? "") && "text-slate-500 hover:text-gray-700 dark:hover:text-gray-300",
                           isCurrent(item.path ?? "") && "text-gray-900 dark:text-white"
                         )}
                       >
@@ -120,14 +120,14 @@ export default function HeaderSimple({ item }: { item: HeaderBlockDto }) {
                           <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                         </svg>
                       </div>
-                      <Menu className="bg-base-100 z-10 rounded-lg border border-gray-200 p-2 dark:border-gray-700 dark:bg-gray-900">
+                      <Menu className="bg-base-100 z-10 rounded-lg border border-gray-200 p-2 dark:border-gray-700 dark:bg-slate-900">
                         {item.items.map((subItem, idx) => {
                           return (
                             <Menu.Item
                               key={idx}
                               className={clsx(
                                 "overflow-hidden rounded-md text-base font-medium leading-6 transition duration-150 ease-in-out focus:outline-none",
-                                !isCurrent(item.path ?? "") && "text-gray-500 hover:text-gray-700 dark:hover:text-gray-300",
+                                !isCurrent(item.path ?? "") && "text-slate-500 hover:text-gray-700 dark:hover:text-gray-300",
                                 isCurrent(item.path ?? "") && "text-gray-900 dark:text-white"
                               )}
                             >

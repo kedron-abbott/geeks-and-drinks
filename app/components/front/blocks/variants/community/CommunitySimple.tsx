@@ -11,7 +11,7 @@ export default function CommunitySimple({ item }: { item: CommunityBlockDto }) {
         <div className="space-y-8 sm:space-y-12">
           <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">{t(item.headline)}</h2>
-            <p className="text-xl text-gray-500">{t(item.subheadline)}</p>
+            <p className="text-xl text-slate-500">{t(item.subheadline)}</p>
             {item.cta && (
               <div className="flex flex-col justify-center space-y-1 sm:flex-row sm:space-x-2 sm:space-y-0">
                 {item.cta.map((item) => {
@@ -64,7 +64,7 @@ export default function CommunitySimple({ item }: { item: CommunityBlockDto }) {
                     <img className="mx-auto h-16 w-16 rounded-full lg:h-20 lg:w-20" src={item.avatar_url} alt={item.user} />
                     <div>
                       <div className="mt-2 text-xs font-medium lg:text-sm">
-                        <h4 className="truncate text-gray-500">{item.user}</h4>
+                        <h4 className="truncate text-slate-500">{item.user}</h4>
                       </div>
                     </div>
                   </div>
