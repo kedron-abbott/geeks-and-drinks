@@ -10,7 +10,7 @@ export default function AboutRoute() {
       role: "Co-Founder / CEO",
       linkedin: "https://www.linkedin.com/in/sharonegutierrez",
       imagePath:
-        "https://media.licdn.com/dms/image/C4D03AQEs1J1XNYw-1Q/profile-displayphoto-shrink_800_800/0/1612386177130?e=1711584000&v=beta&t=NXo33NY_0T-caZ7O24TuxOl_BQkHZSLRdiVlwjNg4Pc",
+        "https://media.licdn.com/dms/image/C4D03AQEs1J1XNYw-1Q/profile-displayphoto-shrink_800_800/0/1612386177130?e=1717027200&v=beta&t=ZeyPnIBT_arnqDU1UCCA7kPHzQKkO8o29OzIUh3MvdA",
       bio: "Sharon Gutierrez is a highly passionate entrepreneur who is known for getting things done. She is the Co-Founder of Geeks & Drinks as well as the SaaS company, Pretty Simple: #1 Affordable Leads Tracking App. Her vision for Geeks & Drinks to create a safe and inclusive space for developers and other Geeks from all backgrounds to share meaningful conversations and support each other in career development.",
     },
     {
@@ -25,7 +25,7 @@ export default function AboutRoute() {
       role: "Tech Community Director",
       linkedin: "http://linkedin.com/in/kedron-abbott",
       imagePath:
-        "https://media.licdn.com/dms/image/D5603AQFInt6wVwCPoA/profile-displayphoto-shrink_800_800/0/1691781825598?e=1711584000&v=beta&t=zM8XZ5HS7DbYW9dxN85sjvM77ygNKLkI-KiuT8xJA94",
+        "https://media.licdn.com/dms/image/D5603AQFInt6wVwCPoA/profile-displayphoto-shrink_800_800/0/1691781825598?e=1717027200&v=beta&t=EaDVpRDB5fk9-3qgE_ctq-xJ1yjcjQ9KCApMR24HURY",
       bio: "I'm passionate about helping underrepresented folks get their next opportunity, especially when it's in tech. For work I've been a fullstack software engineer for the past 5 years, and serve as a mentor to undergrad students. When I'm not working I enjoy cooking, playing video games (PS5 and Switch), and collecting more houseplants - one could never have too many houseplants 🪴.",
     },
     {
@@ -33,7 +33,7 @@ export default function AboutRoute() {
       role: "Growth & Logistics Coordinator",
       linkedin: "https://www.linkedin.com/in/natalieangelinagonzalez",
       imagePath:
-        "https://media.licdn.com/dms/image/C4E03AQHMfFjyGbzyxQ/profile-displayphoto-shrink_800_800/0/1612307964447?e=1711584000&v=beta&t=V9f-wqPEDC-co2OfZgqCRPqGJiYoaEiJMtQqSAcjVrc",
+        "https://media.licdn.com/dms/image/C4E03AQHMfFjyGbzyxQ/profile-displayphoto-shrink_800_800/0/1612307964447?e=1717027200&v=beta&t=xWDwRg83sYaZBcDe6p7uIGouHGBj-TDFQFAbMLoa-UY",
       bio: "Hey y’all, Natalie here. I’m a full stack developer (React, PL/SQL, .Net, and reluctantly Java) in healthcare tech. I’ve been a part of Geeks and Drinks for about two years and I’m excited to see it growing into what it is today and to keep the momentum going to make it even better for our community. I’m interested in helping grow the professional development and mentorship aspects of our meetup community, so reach out with ideas or feedback or thoughts around that!",
     },
   ];
@@ -45,7 +45,9 @@ export default function AboutRoute() {
           <div className="relative mx-auto w-full max-w-7xl overflow-hidden px-4 py-12 sm:px-6 sm:py-6 lg:px-8">
             <div className="text-center">
               <MainHeading title="About Us" />
-              <p className="mt-4 text-lg leading-6 text-slate-500"><span style={{color:"#fea614"}}>//</span> Just a Bunch of Geeks! </p>
+              <p className="mt-4 text-lg leading-6 text-slate-500">
+                <span style={{ color: "#fea614" }}>//</span> Just a Bunch of Geeks!{" "}
+              </p>
 
               <p className="mx-auto mt-10 max-w-4xl sm:text-xl sm:leading-relaxed">
                 Driven by our passion for tech, creating safe and inclusive spaces, and fostering community in San Antonio, our team is committed to making tech
@@ -55,13 +57,16 @@ export default function AboutRoute() {
                 Geeks & Drinks was founded in 2021 when Sharon and Monty moved to San Antonio and wanted a way to meet other geeky/techy friends. The first
                 meetups were often just 4 or 5 people talking about projects they were working on and as it grew they recognized there is a huge network of
                 remote workers in software engineering, cybersecurity and IT that didn’t have a community. Over the years that community has grown to over 1,700
-                and become not only a social outlet, but a support system and opportunity to find jobs.     </p>          
+                and become not only a social outlet, but a support system and opportunity to find jobs. {" "}
+              </p>
             </div>
 
             <div className="mt-14">
               <div className="text-center">
                 <MainHeading title="Committee" />
-                <p className="mt-4 text-lg leading-6 text-slate-500"><span style={{color:"#fea614"}}>//</span> Meet the Team! </p>
+                <p className="mt-4 text-lg leading-6 text-slate-500">
+                  <span style={{ color: "#fea614" }}>//</span> Meet the Team!{" "}
+                </p>
               </div>
 
               <div className="mx-auto mt-10 grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-2">
@@ -70,8 +75,8 @@ export default function AboutRoute() {
                     <li key={person.name}>
                       <img className="aspect-[3/2] w-full rounded-2xl object-cover" src={person.imagePath} alt="" />
                       <h3 className="mt-6 text-lg font-semibold leading-8">{person.name}</h3>
-                      <p className="text-base leading-7 comment text-slate-500"> {person.role}</p>
-                      <p className="mt-4 text-base sm:text-xl sm:leading-relaxed leading-7">{person.bio}</p>
+                      <p className="comment text-base leading-7 text-slate-500"> {person.role}</p>
+                      <p className="mt-4 text-base leading-7 sm:text-xl sm:leading-relaxed">{person.bio}</p>
                       <ul className="mt-6 flex gap-x-6">
                         <li>
                           <a href={person.linkedin} target="_blank" className="text-gray-400 hover:text-blue-500">
@@ -92,7 +97,7 @@ export default function AboutRoute() {
                 </ul>
               </div>
             </div>
-            <div className="flex mt-4 text-left">
+            <div className="mt-4 flex text-left">
               <a href="/contact" className="btn-primary btn-lg btn w-full sm:w-auto">
                 Interested in Volunteering? Contact Us <span aria-hidden="true"> &rarr;</span>
               </a>
