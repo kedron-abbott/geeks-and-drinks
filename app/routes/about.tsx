@@ -2,6 +2,10 @@ import Footer from "~/components/front/Footer";
 import Header from "~/components/front/Header";
 import ServerError from "~/components/ui/ServerError";
 import MainHeading from "~/components/ui/MainHeading";
+import NataliePic from "~/assets/img/natalie.png";
+import MontyPic from "~/assets/img/monty.jpeg";
+import SharonPic from "~/assets/img/sharon.jpeg";
+import KedronPic from "~/assets/img/kedron.jpeg";
 
 export default function AboutRoute() {
   const people = [
@@ -9,31 +13,28 @@ export default function AboutRoute() {
       name: "Sharon Guiterrez",
       role: "Co-Founder / CEO",
       linkedin: "https://www.linkedin.com/in/sharonegutierrez",
-      imagePath:
-        "https://media.licdn.com/dms/image/C4D03AQEs1J1XNYw-1Q/profile-displayphoto-shrink_800_800/0/1612386177130?e=1717027200&v=beta&t=ZeyPnIBT_arnqDU1UCCA7kPHzQKkO8o29OzIUh3MvdA",
+      imagePath: SharonPic,
       bio: "Sharon Gutierrez is a highly passionate entrepreneur who is known for getting things done. She is the Co-Founder of Geeks & Drinks as well as the SaaS company, Pretty Simple: #1 Affordable Leads Tracking App. Her vision for Geeks & Drinks to create a safe and inclusive space for developers and other Geeks from all backgrounds to share meaningful conversations and support each other in career development.",
     },
     {
       name: "Monty Morgan",
       role: "Co-Founder",
       linkedin: "https://www.linkedin.com/in/michaelmmorgan",
-      imagePath: "https://secure.meetupstatic.com/photos/member/a/2/6/8/highres_307841576.jpeg",
+      imagePath: MontyPic,
       bio: "I'm a self-taught front end developer and currently work at Cognitive Space. I started Geeks & Drinks to meet new people when I moved to San Antonio.  I love how many cool people I've met through Geeks & Drinks. I'm a foodie and love to surf.",
     },
     {
       name: "Kedron Abbott",
       role: "Tech Community Director",
       linkedin: "http://linkedin.com/in/kedron-abbott",
-      imagePath:
-        "https://media.licdn.com/dms/image/D5603AQFInt6wVwCPoA/profile-displayphoto-shrink_800_800/0/1691781825598?e=1717027200&v=beta&t=EaDVpRDB5fk9-3qgE_ctq-xJ1yjcjQ9KCApMR24HURY",
+      imagePath: KedronPic,
       bio: "I'm passionate about helping underrepresented folks get their next opportunity, especially when it's in tech. For work I've been a fullstack software engineer for the past 5 years, and serve as a mentor to undergrad students. When I'm not working I enjoy cooking, playing video games (PS5 and Switch), and collecting more houseplants - one could never have too many houseplants 🪴.",
     },
     {
       name: "Natalie Gonzalez",
       role: "Growth & Logistics Coordinator",
       linkedin: "https://www.linkedin.com/in/natalieangelinagonzalez",
-      imagePath:
-        "https://media.licdn.com/dms/image/C4E03AQHMfFjyGbzyxQ/profile-displayphoto-shrink_800_800/0/1612307964447?e=1717027200&v=beta&t=xWDwRg83sYaZBcDe6p7uIGouHGBj-TDFQFAbMLoa-UY",
+      imagePath: NataliePic,
       bio: "Hey y’all, Natalie here. I’m a full stack developer (React, PL/SQL, .Net, and reluctantly Java) in healthcare tech. I’ve been a part of Geeks and Drinks for about two years and I’m excited to see it growing into what it is today and to keep the momentum going to make it even better for our community. I’m interested in helping grow the professional development and mentorship aspects of our meetup community, so reach out with ideas or feedback or thoughts around that!",
     },
   ];
